@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
 
   List provinsiData = []; //gak tau kenapa harus begini
   fetchProvinsiData()async{
-    http.Response response = await http.get(Uri.parse('https://corona.lmao.ninja/v2/countries')); // harusnya https://data.covid19.go.id/public/api/prov.json
+    http.Response response = await http.get(Uri.parse('https://corona.lmao.ninja/v2/countries?sort=cases')); // harusnya https://data.covid19.go.id/public/api/prov.json
     setState(() {
     provinsiData = json.decode(response.body);
     });
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
 
       Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-        child: Text('KASUS COVID NEGARA LAIN', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
+        child: Text('5 NEGARA DENGAN KASUS TERBANYAK', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
       ),
     
     SizedBox(height: 10,),

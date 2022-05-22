@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:ffi';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_covid/pages/search.dart';
 import 'package:http/http.dart' as http;
 
 // countryData diganti nama dengan provinsiData
@@ -32,6 +33,13 @@ class _CountryPageState extends State<CountryPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: <Widget> [
+          IconButton(icon: Icon(Icons.search), onPressed: (){
+
+            showSearch(context: context, delegate: Search(provinsiData));
+
+          },)
+        ],
         title: Text('Status Negara'),
         backgroundColor: Color(0xff202c3b),
       ),

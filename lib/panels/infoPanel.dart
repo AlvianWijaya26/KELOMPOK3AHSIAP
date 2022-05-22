@@ -93,7 +93,7 @@ class InfoPanel extends StatelessWidget {
             GestureDetector(
               onTap: () {
               launch(
-                  'https://kawalcovid19.id/');
+                  'https://www.pedulilindungi.id/');
             },
               child: Container(
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
