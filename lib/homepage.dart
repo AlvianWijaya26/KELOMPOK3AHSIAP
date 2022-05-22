@@ -5,6 +5,7 @@ import 'package:flutter_application_covid/pages/provinsiPage.dart';
 import 'package:flutter_application_covid/panels/indonesiapanel.dart';
 import 'package:flutter_application_covid/panels/infoPanel.dart';
 import 'package:flutter_application_covid/panels/provinsiterbanyak.dart';
+import 'package:flutter_application_covid/tentangkami.dart';
 import 'package:http/http.dart' as http;
 import 'datasorce.dart';
 
@@ -44,7 +45,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff202c3b),
-        title: Text('COVIC-19 WORLD TRACKER'),
+        title: Text('COVID-19 WORLD TRACKER'),
         centerTitle: false,
       ),
 

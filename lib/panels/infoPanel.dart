@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_covid/datasorce.dart';
+import 'package:flutter_application_covid/infoscreen.dart';
 import 'package:flutter_application_covid/pages/faqs.dart';
+import 'package:flutter_application_covid/pages/provinsiPage.dart';
+import 'package:flutter_application_covid/tentangkami.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class InfoPanel extends StatelessWidget {
@@ -34,7 +37,7 @@ class InfoPanel extends StatelessWidget {
             GestureDetector(
               onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => FAQPage()));
+                  context, MaterialPageRoute(builder: (context) => InfoScreen()));
             },
               child: Container(
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
@@ -109,7 +112,7 @@ class InfoPanel extends StatelessWidget {
             GestureDetector(
               onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => FAQPage()));
+                  context, MaterialPageRoute(builder: (context) => TentangKami()));
             },
               child: Container(
               padding: EdgeInsets.symmetric(vertical: 12, horizontal: 10),
